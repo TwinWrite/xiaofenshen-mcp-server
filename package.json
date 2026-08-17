@@ -1,0 +1,41 @@
+{
+  "name": "@twinwrite/xiaofenshen-mcp-server",
+  "version": "0.1.0",
+  "description": "小分身 TwinWrite 公开 MCP（官网 https://xiaofenshen.com）：转发已免登录的分享、生图模板与帮助文档",
+  "homepage": "https://xiaofenshen.com",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "xiaofenshen-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwinWrite/xiaofenshen-mcp-server.git"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^2.1.9"
+  }
+}
