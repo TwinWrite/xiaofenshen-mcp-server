@@ -1,7 +1,8 @@
 {
   "name": "@twinwrite/xiaofenshen-mcp-server",
   "version": "0.1.0",
-  "description": "小分身公开 MCP：转发已免登录的分享、生图模板与帮助文档",
+  "description": "小分身 TwinWrite 公开 MCP（官网 https://xiaofenshen.com）：转发已免登录的分享、生图模板与帮助文档",
+  "homepage": "https://xiaofenshen.com",
   "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@10.33.0",
